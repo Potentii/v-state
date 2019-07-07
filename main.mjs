@@ -1,15 +1,13 @@
-import States from './libs/states';
+import install from './install';
 
 
 
-export function install(Vue, options){
+class VStates{
 
-	Vue.mixin({
-		data(){
-			return {
-				$states: new States()
-			};
-		}
-	});
+	constructor(){}
 
 }
+
+VStates.install = install;
+
+export default VStates;
