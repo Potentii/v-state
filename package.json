@@ -1,9 +1,12 @@
 {
   "name": "v-state",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "main": "main.mjs",
   "type": "module",
+  "scripts": {
+    "test": "mocha --require @std/esm ./tests/main.test.mjs"
+  },
   "keywords": [
     "vue",
     "state",
@@ -28,5 +31,10 @@
   "license": "MIT",
   "peerDependencies": {
     "vue": "^2.0.0"
+  },
+  "devDependencies": {
+    "@std/esm": "0.26.0",
+    "chai": "4.2.0",
+    "mocha": "6.2.1"
   }
 }

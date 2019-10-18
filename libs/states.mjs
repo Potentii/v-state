@@ -66,10 +66,10 @@ export default class States{
 	 */
 	not(state){
 		if(Array.isArray(state))
-			return this.every(...state);
+			return !this.some(...state);
 
 		if(arguments.length > 1)
-			return this.every(...arguments);
+			return !this.some(...arguments);
 
 		return !this.is(state);
 	}
